@@ -42,7 +42,7 @@ const deleteOne = (id) => {
     .then(([result]) => result.affectedRows === 1);
 };
 
-const update = (id, product) => {
+const update = (id_product, product) => {
     let sql = 'UPDATE products SET'
     let sqlValues = [];
     let oneValue = false;
@@ -65,8 +65,8 @@ const update = (id, product) => {
         sql += oneValue ? ',id_category = ?' : 'id_category = ?';
         sqlValues.push(product.id_category);
     }
-    sql += 'WHERE id_product = ?';
-    sqlValues.push(id);
+    sql += ' WHERE id_product = ?';
+    sqlValues.push(id_product);
     return connection
     .promise()
     .query(

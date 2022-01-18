@@ -33,7 +33,7 @@ const update = (id, category) => {
   let sqlValues = [];
   let oneValue = false;
   if (category.name) {
-    sql += 'name = ?';
+    sql += ' name = ?';
     sqlValues.push(category.name);
     oneValue = true;
   }

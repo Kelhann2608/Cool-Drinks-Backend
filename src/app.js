@@ -1,16 +1,17 @@
 require('dotenv').config();
 const express = require('express');
-const { setupRoutes } = require('./controllers');
+const setupRoutes = require('./controllers');
+const cookieParser = require('cookie-parser');
 const app = express();
-
-const port = process.env.PORT || 3002;
 
 app.use(express.json());
 
-setupRoutes(app);
+app.use(cookieParser());
 
-app.listen(port, () => {
-  console.log(`server listening on port ${port}`);
+app.get('/coucou', (req, res) => {
+  res.status(200).send('hibou');
 });
+
+setupRoutes(app);
 
 module.exports = app;

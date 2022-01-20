@@ -4,7 +4,6 @@ const { readAdminFromCookie } = require('../helpers/admins');
 
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const { hash } = require('argon2');
 
 adminRouter.post('/test', (req, res) => {
     const password = req.body.password;

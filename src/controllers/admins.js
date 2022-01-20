@@ -37,6 +37,5 @@ adminRouter.post('/', (req, res) => {
     }
 });
 
-module.exports = {
-    adminRouter,
-};
+module.exports = adminRouter
+;

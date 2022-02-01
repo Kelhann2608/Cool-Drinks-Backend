@@ -2,6 +2,7 @@ const categoryRouter = require('express').Router();
 const Category = require('../models/category');
 const Product = require('../models/product');
 
+// mes routes GET, POST, DELETE
 categoryRouter.get('/', async (req, res) => {
   const categories = await Category.getAll();
   res.status(200).send(categories);

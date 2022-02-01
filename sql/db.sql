@@ -47,7 +47,7 @@ INSERT INTO products (name,description,image,id_category)
 ('Macchiato', 'Espresso auquel on ajoute une cuillère de mousse de lait', 'https://assets.afcdn.com/recipe/20181203/84501_w1024h1024c1cx1666cy2223.jpg', 1),
 ('Cappuccino', 'Café italien composé à part égales d_espresso de lait chaud et de mousse de lait', ' https://assets.afcdn.com/recipe/20160919/20976_w1024h1024c1cx2624cy1749.webp', 1),
 ('Mokaccino', 'Mariage réussi de chocolat de lait chaud de crème fouettée et d_espresso', ' https://www.cafe-italien.ch/wp-content/uploads/compatible-nespresso-mokaccino.jpg', 1),
-('Irish coffe', 'Mélange subtil d_espresso de sucre granulé de crème fouettée et de wisky irlandais', 'https://uploads-ssl.webflow.com/603e7f3219462c686bd2bb29/606c5e8f94edde7f1fd709df_irish-coffee-main.jpeg', 1),
+('Irish coffee', 'Mélange subtil d_espresso de sucre granulé de crème fouettée et de wisky irlandais', 'https://uploads-ssl.webflow.com/603e7f3219462c686bd2bb29/606c5e8f94edde7f1fd709df_irish-coffee-main.jpeg', 1),
 ('Affogato', 'Ce classique de la gastronomie italienne se prépare en versant un espresso bien chaud sur une glace à la vanille', 'https://media.soscuisine.com/images/recettes/232.jpg', 1),
 ('Smoothie banane et miel', 'smoothie à base de banane avec une cuillère à café de miel et un zeste de citron', 'https://assets.afcdn.com/recipe/20131009/63238_w1024h1024c1cx1872cy2657.webp', 2),
 ('Smootie fraise-mangue-banane', 'Smoothie avec une belle dose de fruits frais mariant la banane à la mangue et à la fraise', 'https://img.cuisineaz.com/660x660/2018/08/22/i141817-.jpeg ', 2),

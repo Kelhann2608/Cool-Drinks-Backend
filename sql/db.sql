@@ -56,10 +56,10 @@ INSERT INTO products (name,description,image,id_category)
 ('Smoothie aux fruits rouges', 'Que l_on soit plutôt cassis mûres ou framboises chacun trouve son bonheur avec ce smoothie aux fruits rouges', 'https://drive.google.com/file/d/10t_zqayrAn1kxcw6_daPa4ETfWs2cbaM/view?usp=sharing', 2),
 ('Smoothie pomme-cerise', 'Véritable boisson printanière ce smoothie pomme cerise ne vous laissera pas indifférent', 'https://drive.google.com/file/d/1rigqJpNxaZZm5ef7XGcLiwAYcwRNzUDS/view?usp=sharing', 2),
 ('Beignets à la confiture', 'Des beignets fait maison à la fraise la pomme la framboise et l_abricot', 'https://drive.google.com/file/d/1SUthEzl9826lzmOQfHTbxqkr7szDFWSY/view?usp=sharing', 3),
-('Cookies', 'Cookies aux pépites de chocolat aux noix de pécans', 'https://drive.google.com/file/d/1NbHZAAIS5ijuMJrUeCPtcwdZ856bG4Fp/view?usp=sharing', 3),
-('Brownies', 'Brownies aux pépites de chocolat à la noix de pécans', 'https://drive.google.com/file/d/1dRy5PAH3el2oA5UJiZJc_PZ07ZATj6wh/view?usp=sharing', 3),
-('Muffins', 'Muffins aux pépites de chocolat aux fruits rouges aux caramel','https://drive.google.com/file/d/1ObWUgtZYReOadLLA2wFzigcyp4dbt8cn/view?usp=sharing', 3),
-('Torsades aux chocolat', 'Torsades à la crèmes et aux pépites de chocolat', 'https://drive.google.com/file/d/1HqTybw77o8zy0V37jVNzvsvkZ5wrbWN-/view?usp=sharing', 3),
-('Paris-Brest', 'Pâte à choux croquante fourrée d_une crème aux praliné parsemée d_amandes','https://drive.google.com/file/d/1-OKRi4oWI3i426iVBLGAYAHa9l5urZ11/view?usp=sharing', 3);
+('Cookies', 'Cookies aux pépites de chocolat aux noix de pécans', 'https://img.cuisineaz.com/2015-11-05/i71617-recette-des-cookies-moelleux-aux-pepites-de-chocolat.jpg ', 3),
+('Brownies', 'Brownies aux pépites de chocolat à la noix de pécans', 'https://www.hervecuisine.com/wp-content/uploads/2015/10/brownies.jpg ', 3),
+('Muffins', 'Muffins aux pépites de chocolat aux fruits rouges aux caramel','https://www.papillesetpupilles.fr/wp-content/uploads/2005/07/Muffins-aux-pe%CC%81pites-de-chocolat-%C2%A9-Elena-Shashkina-Shutterstock.jpg', 3),
+('Torsades aux chocolat', 'Torsades à la crèmes et aux pépites de chocolat', 'https://img.cuisineaz.com/660x660/2015/07/27/i93987-torsades-au-chocolat.jpg', 3),
+('Paris-Brest', 'Pâte à choux croquante fourrée d_une crème aux praliné parsemée d_amandes','https://www.atelierdeschefs.com/media/recette-e32634-paris-brest-mousseline-praline.jpg', 3);
 
 

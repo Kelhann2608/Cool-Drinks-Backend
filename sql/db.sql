@@ -62,4 +62,4 @@ INSERT INTO products (name,description,image,id_category)
 ('Torsades aux chocolat', 'Torsades à la crèmes et aux pépites de chocolat', 'https://drive.google.com/file/d/1HqTybw77o8zy0V37jVNzvsvkZ5wrbWN-/view?usp=sharing', 3),
 ('Paris-Brest', 'Pâte à choux croquante fourrée d_une crème aux praliné parsemée d_amandes','https://drive.google.com/file/d/1-OKRi4oWI3i426iVBLGAYAHa9l5urZ11/view?usp=sharing', 3);
 
-INSERT INTO admins (lastname,firstname,email,password,admin) VALUES ('Mayoral', 'Joseph', 'joseph.mayoral@wildcodeschool.com', 'Wilddrinks7', 1);
+

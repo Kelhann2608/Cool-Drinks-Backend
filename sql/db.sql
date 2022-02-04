@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `cool_drinks`.`admins` (
   `firstname` VARCHAR(100) NOT NULL,
   `email` VARCHAR(255) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
-  `admin` TINYINT(1) NULL DEFAULT 0,
+  `admin` TINYINT(0) DEFAULT 1,
   PRIMARY KEY (`id_admin`))
 ENGINE = InnoDB;
 

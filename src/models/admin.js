@@ -28,6 +28,20 @@ const verifyPassword = (password, cryptedPassword) => {
   return argon.verify(cryptedPassword, password, hashOptions);
 };
 
+const getAll = () => {
+  return connection
+    .promise()
+    .query('SELECT * FROM admins')
+    .then(([results]) => results);
+};
+
+const getById = (id) => {
+  return connection
+    .promise()
+    .query('SELECT * FROM admins where id_admin = ?', [id])
+    .then(([results]) => results[0]);
+};
+
 const create = (lastname, firstname, email, password) => {
   return connection
     .promise()
@@ -37,6 +51,13 @@ const create = (lastname, firstname, email, password) => {
     );
 };
 
+const deleteOne = (id) => {
+  return connection
+    .promise()
+    .query('DELETE FROM admins WHERE id_admin = ?', [id])
+    .then(([result]) => result.affectedRows === 1);
+};
+
 const getByEmail = (email) => {
   return connection
     .promise()
@@ -44,9 +65,12 @@ const getByEmail = (email) => {
 };
 
 module.exports = {
+  getAll,
+  getById,
   cryptePassword,
   validate,
   verifyPassword,
   create,
+  deleteOne,
   getByEmail,
 };

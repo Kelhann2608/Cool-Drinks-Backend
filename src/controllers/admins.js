@@ -6,6 +6,15 @@ require('dotenv').config();
 const jwt = require('jsonwebtoken');
 
 // mes routes GET, POST, DELETE
+adminRouter.get('/', async (req, res) => {
+  const admins = await Admin.getAll();
+  res.status(200).send(admins);
+});
+adminRouter.get('/:id', async (req, res) => {
+  const admin = await Admin.getById(req.params.id);
+  admin ? res.status(200).send(admin) : res.sendStatus(404);
+});
+
 adminRouter.post('/test', (req, res) => {
   const password = req.body.password;
 
@@ -16,6 +25,11 @@ adminRouter.post('/test', (req, res) => {
 
 adminRouter.put('/', readAdminFromCookie, (req, res) => {
   res.status(200).json(req.adminId);
+});
+
+adminRouter.delete('/:id', async (req, res) => {
+  const adminDeleted = await Admin.deleteOne(req.params.id);
+  adminDeleted ? res.sendStatus(204) : res.sendStatus(404);
 });
 
 adminRouter.post('/', (req, res) => {
